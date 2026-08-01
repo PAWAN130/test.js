@@ -30,11 +30,31 @@ let myObj = {
 
 }
 
-const myFunction = function(){
+const myFunction = function () {
     console.log("Hello");
 
 
 }
-console.log(typeof scoreValue)
+console.log(typeof scoreValue);
 
+
+// //+++++++++++++++++++++++++++++++++++++++++++++++
+// // stack (primitive), Heap (/Non-premitive)
+
+let myName = "Pawan"
+let anotherName = myName
+anotherName = "Pawan"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@gmil.com",
+    upi:"user@ybl"
+
+}
+
+let userTw = userOne
+
+userTwo.email= "Pawan@google.com"
 
