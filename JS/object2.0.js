@@ -52,14 +52,50 @@ const users =[
 ]
 
 // users[1].email
-console.log(flipkart);
+// console.log(flipkart);
 
-console.log(Object.keys(flipkart));
-console.log(Object.values(flipkart));
-console.log(Object.entries(flipkart));
+// console.log(Object.keys(flipkart));
+// console.log(Object.values(flipkart));
+// console.log(Object.entries(flipkart));
 
 //if you are looping with codes and wants to find the value is existing or not the we use-->
 
 console.log(flipkart.hasOwnProperty('isLoggedIn'));
-console.log(flipkart.hasOwnProperty('isLogged'));
+// console.log(flipkart.hasOwnProperty('isLogged'));
+
+
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "pawan"
+}
+
+//course.courseInstructor
+
+const{courseInstructor:Instructor} = course
+const{coursename} = course
+console.log(Instructor)
+// console.log(coursename)
+
+
+// const navbar = (props.company) =>{
+//const navbar = ({company}) =>{}
+// } //{company..so on anything}this is way of distructuring
+
+// navbar(company = "Pawan")
+
+// {
+//     //Json api
+
+//     "name": "Pawan",
+//     "course": "web developement",
+//     "price": "free"
+// }
+
+//somtimes API's are formed in array formates
+[
+    {},
+    {},
+    {}
+]
 
