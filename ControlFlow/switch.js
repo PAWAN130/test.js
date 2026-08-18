@@ -32,3 +32,5 @@ switch (month) {
 }
 
 //break--> break is used to break the control flow 
+
+// if we commont on break then the entire code will run and shows as output
