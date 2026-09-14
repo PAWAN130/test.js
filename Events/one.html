@@ -29,7 +29,64 @@
 
 </body>
 <script>
+    // document.getElementById('Sunset').onclick= function(){
+    //     alert ("Sunset clicked")
+    // }
+
+    //AttachEvent()
+    //jQuery-on
+
+    //type, timestamp, defaultPrevented, 
+    //target, srcElement, toElement, currentTarget
+    // clientX, ctrlkey, shiftkey, keycode
+
+
+    document.getElementById("Sunset").addEventListener("click", function (e){
+        console.log("clicked inside the ur");
+
+      document.getElementById("Sunset").addEventListener("click", function (e) {
+            console.log("Sunset clicked");
+            e.stopPropagation()   
+            //  if you want ki bubbling na ho inner element jahas hai wahi rha jaye aur outer elemnt jaha hai wahi rha jaye
+
+        }, false)
+
+      
+    // Event propogation***********************
+    // bubbling-up
+    // goes from down to up tracking  of element inside to outside is called event propogation
     
+    });
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.defaultPrevented();
+        e.stopPropagation
+        console.log("google clicked");
+    }, false)
+
+
+    
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName==="IMG"){
+            console.log(e.target.id);
+            let removeIt= e.target.parentNode
+            removeIt.remove()
+            
+        }
+
+
+
+
+
+        // let removeIt.rremove()
+        // removeIt.parentNode.removeChild(removeIt)
+        
+    })
+
+
 </script>
 
 </html>
+    
