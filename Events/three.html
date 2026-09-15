@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Pawan", Data.now());
+
+    // },1000)
+
+    const sayDate = function (str) {
+        console.log("str", Date.now());
+
+    }
+    let intervalId;
+    //start button
+    document.querySelector("#start").addEventListener("click", function () {
+        if (!intervalId) {
+            intervalId = setInterval(sayData, 1000, "Pawan");
+
+        }
+    });
+
+    //stop button
+
+    document.querySelector("#stop").addEventListener("click", function () {
+            clearInterval(intervalId);
+            intervalId = null;
+
+    });
+
+    // const intervalId = setInterval(sayDate,1000, "Hi")
+
+    // clearInterval(intervalId)
+</script>
+
+</html>
